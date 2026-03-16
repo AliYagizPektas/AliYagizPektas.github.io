@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yağız | Yazılım Geliştirici</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0e1117; color: #fafafa; font-family: 'Segoe UI', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg, #ff4b4b, #ff8e8e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-link:hover { color: #ff4b4b; transition: 0.3s; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full bg-[#0e1117]/90 backdrop-blur-md z-50 py-4 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-5 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-[#ff4b4b] tracking-tight">Ana Sayfa</a>
+            <div class="flex gap-8 items-center text-gray-300">
+                <a href="index.html" class="nav-link font-medium">Ana Sayfa</a>
+                <a href="projects.html" class="nav-link font-medium">Projelerim</a>
+                <a href="#about" class="nav-link font-medium">Hakkımda</a>
+                <a href="mailto:aliyagizpektas123@gmail.com" class="bg-[#ff4b4b] text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-[#ff6b6b] transition">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="h-screen flex flex-col justify-center items-center text-center px-5 pt-20">
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tighter">İlgilendiğim <span class="gradient-text">Alanlar.</span></h1>
+        <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">Ben Yağız , karmaşık sorunlara basit ve şık çözümler üreten bir bilgi güvenliği öğrencisi ve yazılım geliştiriciyim. Python, C++, C# ve modern kullanıcı arayüzleri üzerine odaklanarak oyun ve uygulamalar geliştiriyorum.</p>
+        <div class="flex gap-6">
+            <a href="projects.html" class="bg-[#ff4b4b] hover:bg-[#ff6b6b] px-10 py-4 rounded-full text-lg font-bold transition flex items-center gap-2">
+                <i class="fas fa-code"></i> Projelerimi Gör
+            </a>
+        </div>
+    </header>
+	
+	<section id="about" class="py-24 bg-[#161b22] px-5 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10 tracking-tight">Ben <span class="text-[#ff4b4b]">Kimim?</span></h2>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed">Ben bilgi güvenliği öğrencisiyim, bilgi güvenliğinin yanı sıra yazılıma olan ilgimden dolayı oyun ve uygulama geliştiriyorum.</p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
+                <span class="px-5 py-2 bg-[#0e1117] rounded-full border border-gray-700">Python</span>
+                <span class="px-5 py-2 bg-[#0e1117] rounded-full border border-gray-700">C++ / C#</span>
+                <span class="px-5 py-2 bg-[#0e1117] rounded-full border border-gray-700">Tersine Mühendislik</span>
+                <span class="px-5 py-2 bg-[#0e1117] rounded-full border border-gray-700">Unity Game Dev</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
